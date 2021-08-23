@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Algorithms</title>
+  <link rel="stylesheet" href="sass/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <iframe src="menu.html" title="menu" width="100%" height="130px"></iframe> 
+
+  <div class="main-wrapper">
+
+    <div class="headlines">
+
+      <div class="image-holder">
+        <a href="#" target="_blank"><img class="image-hyperlink" src="" alt="Algorithms logo" height="100px"></a>
+      </div>
+
+      <p>Git Bash is a command line console.</p>
+
+    </div>
+
+    <div class="main-content">
+
+      <div class="">
+        <h2>Command Line Controls</h2>
+        <ul>
+          <li><span class="command">pwd</span> &#187; <span class="command">p</span>rint <span class="command">w</span>orking <span class="command">d</span>irectory, displays the current directory</li>
+          <li><span class="command">ls</span> &#187; <span class="command">l</span>i<span class="command">s</span>t, displays files and folders within the current directory.
+            <ul>
+              <li><span class="options">-a</span> &#187; lists <span class="options">a</span>ll files and folders, including ones that are hidden and start with a full stop/period (.)</li>
+              <li><span class="options">-l</span> &#187; <span class="options">l</span>ists files in long format</li>
+              <li><span class="options">-t</span> &#187; lists file with <span class="options">t</span>imestamp</li>
+              <li><span class="options">-alt</span> &#187; lists file with all the options above</li>
+            </ul>
+          </li>
+          <li><span class="command">cd &#60;directory name&#62;</span> &#187; change directory</li>
+          <li><span class="command">rm &#60;filename&#62;</span> &#187; remove file</li>
+          <li><span class="command">mv &#60;original-filename&#62; &#60;new-filename&#62;</span> &#187; moves/renames files</li>
+          <li><span class="command">cat &#60;filename&#62;</span> &#187; prints the contents of the file to the console</li>
+          <li><span class="command">sed 's/term1/term2/' &#60;filename&#62;</span> &#187; substitutes term1 for term2 in the given file</li>
+          <li><span class="command">uniq &#60;filename&#62;</span> &#187; removes duplicate entries in the given file when they are contiguous so best to sort first, case-sensitive
+            <ul>
+              <li><span class="options">-i</span> &#187; <span class="options">i</span>gnores case</li>
+            </ul>
+         </li>
+          <li><span class="command">sort &#60;filename&#62;</span> &#187; sorts the file in descending aplhabetical order</li>
+          <li><span class="command">clear</span> &#187; clears the screen</li>
+          <li><span class="command">&#9650;</span> &#187; scrolls back through previous commands</li>
+        </ul>
+      </div>
+
+      <div class="">
+        <h2>Command Line Editor (Nano)</h2>
+        <ul>
+          <li><span class="command">nano &#60;filename&#62;</span> &#187; opens the editor with the filename specified, creates a blank file if it does not exist</li>
+          <li><h3>Shortcuts</h3>
+            <ul>
+              <li><span class="options">ctrl + o (^o)</span> &#187; write<span class="options">o</span>ut, saves the current file</li>
+              <li><span class="options">ctrl + x (^x)</span> &#187; e<span class="options">x</span>its the editor</li>
+              <li><span class="options">ctrl + g (^g)</span> &#187; <span class="options">g</span>et help</li>
+              <li><span class="options">ctrl + r (^r)</span> &#187; <span class="options">r</span>ead file</li>
+              <li><span class="options">ctrl + w (^w)</span> &#187; <span class="options">w</span>here is</li>
+              <li><span class="options">ctrl + y (^y)</span> &#187; previous page</li>
+              <li><span class="options">ctrl + v (^v)</span> &#187; next page</li>
+              <li><span class="options">ctrl + k (^k)</span> &#187; cut text</li>
+              <li><span class="options">ctrl + u (^u)</span> &#187; <span class="options">u</span>ncut text</li>
+              <li><span class="options">ctrl + c (^c)</span> &#187; <span class="options">c</span>ursor position</li>
+              <li><span class="options">ctrl + t (^t)</span> &#187; <span class="options">t</span>o spell</li>
+            </ul>
+          </li>
+          <li><span class="command"></span> &#187; </li>
+          <li><span class="command"></span> &#187; </li>
+          <li><span class="command"></span> &#187; </li>
+        </ul>
+      </div>
+
+      <div class="">
+        <h2>Environment</h2>
+        <ul>
+          <li><h3>Bash Profile</h3>
+            <ul>
+              <li><span class="command">nano ~/.bash_profile</span> &#187; opens the editor with the bash profile</li>
+              <li><span class="command">source ~/.bash_profile</span> &#187; activates changes in the bash profile
+                <ul>
+                  <li><span class="options">echo "&#60;string&#62;"</span> &#187; creates a welcome message which will run every time you start Bash</li>
+                  <li><span class="options">alias &#60;shortcut&#62;="&#60;command&#62;"</span> &#187; creates a shortcut for a command eg pd="pwd"</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li><h3>Shortcuts</h3>
+            <ul>
+              <li><span class="options">ctrl + o (^o)</span> &#187; write<span class="options">o</span>ut, saves the current file</li>
+            </ul>
+          </li>
+          <li><span class="command"></span> &#187; </li>
+          <li><span class="command"></span> &#187; </li>
+          <li><span class="command"></span> &#187; </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

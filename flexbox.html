@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox</title>
+  <link rel="stylesheet" href="sass/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <iframe src="menu.html" title="menu" width="100%" height="130px"></iframe> 
+  <!-- <div class="home-nav">
+    <ul>
+      <li><a href="#">General</a>
+        <ul class="submenu">
+          <li><a href="bash.html">Bash</a></li>
+          <li><a href="git.html">Git/GitHub</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Web Development</a>
+        <ul class="submenu">
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="flexbox.html">Flexbox</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Software Development</a>
+        <ul class="submenu">
+          <li><a href="java.html">Java</a></li>
+          <li><a href="python.html">Python</a></li>
+          <li><a href="cpp.html">C++</a></li>
+          <li><a href="algorithms.html">Algorithms</a></li>
+          <li><a href="oop.html">Object Oriented Programming</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div> -->
+
+  <div class="main-wrapper">
+
+    <div class="headlines">
+
+      <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank"><img class="image-hyperlink" src="resources/flexbox-logo.png" alt="Flexbox" height="100px"></a>
+
+      <p>An efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic.</p>
+
+    </div>
+
+    <div class="main-content">
+
+      <div class="">
+        <h2>Flex Container</h2>
+        <ul>
+          <li><span class="command">display:</span><span class="options"> flex | inline-flex</span> &#187; creates the container</li>
+          <li><span class="command">flex-direction:</span><span class="options"> row <span class="em">(default)</span> | row-reverse | column | column-reverse</span> &#187; options</li>
+          <li><span class="command">flex-wrap:</span><span class="options"> nowrap <span class="em">(default)</span> | wrap | wrap-reverse</span> &#187; options</li>
+          <li><span class="command">flex-flow:</span><span class="options"> row nowrap <span class="em">(default)</span></span> &#187; shorthand for flex-direction and flex-wrap</li>
+          <li><span class="command">justify-content:</span><span class="options"> flex-start <span class="em">(default)</span> | flex-end | start | end | left | right | center | space-between | space-around | space-evenly</span> &#187; controls the main axis positioning</li>
+          <li><span class="command">align-items:</span><span class="options"> stretch <span class="em">(default)</span> | flex-start/start/self-start | flex-end/end/self-end | center | baseline |</span> &#187; controls the cross axis positioning</li>
+          <li><span class="command">align-content:</span><span class="options"> normal <span class="em">(default)</span> | flex-start/start | flex-end/end | center | space-between | space-around | space-evenly | stretch</span> &#187; also controls cross axis positioning</li>
+
+          
+
+
+
+
+
+          
+        </ul>
+      </div>
+
+      <div class="">
+        <h2>Flex Item</h2>
+        <ul>
+          <li><span class="command">order:</span><span class="options"> 0 <span class="em">(default)</span></span> &#187; the higher the number the further to the right or bottom, negative numbers are valid</li>
+          <li><span class="command">flex-grow:</span><span class="options"> 1 <span class="em">(default)</span></span> &#187; proportion of space taken up by an item, negative numbers are invalid</li>
+          <li><span class="command">flex-shrink:</span><span class="options"> 1 <span class="em">(default)</span></span> &#187; opposite of flex-grow</li>
+          <li><span class="command">flex-basis:</span><span class="options"> auto <span class="em">(default)</span> | a length in %, rem, px etc | content | max-content | min-content | fit-content </span> &#187; default size of an element before space is distributed</li>
+          <li><span class="command">flex:</span><span class="options"> 0 1 auto <span class="em">(default)</span></span> &#187; shorthand for flex-grow, flex-shrink and flex-basis</li>
+          <li><span class="command">align-self:</span><span class="options"> stretch <span class="em">(default)</span> | flex-start/start/self-start | flex-end/end/self-end | center | baseline </span> &#187; positioning for individual items, overrides others positioning commands</li>
+          
+          
+          
+          
+          
+          
+          
+          
+          <li><span class="command">command:</span><span class="options"> options</span> &#187; options</li>
+          <li><span class="command">command:</span><span class="options"> options</span> &#187; options</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

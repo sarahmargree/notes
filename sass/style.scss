@@ -1,0 +1,272 @@
+
+/* ==================================
+  VARIABLES
+===================================*/
+$hyperlink-hover-color: purple;
+$text-dark: #000;
+$hover-color: #666;
+$text-light: #fff;
+$active-color: #ff0000;
+$box-shadow-color: #999;
+$sass-color: #cf649a;
+$scout-color: #e11e26;
+$main-font: 'Roboto', sans-serif;
+$secondary-font: 'Roboto Mono', monospace;
+$accent-color: #3c34e0;
+$command-color: green;
+$options-color: maroon;
+$accent-color-light: #6059e4;
+$command-color-light: rgba(84, 163, 84);
+$options-color-light: rgba(175, 80, 80);
+$html-light-color: #f47933;
+$html-dark-color: #f15931;
+$bash-light-color: #7fb3ff;
+$bash-dark-color: #8dd35f;
+
+
+/* ==================================
+  MIXINS
+===================================*/
+
+@mixin center {
+  width: 95%;
+  margin: 20px auto;
+}
+
+/* ==================================
+  BASE STYLES
+===================================*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background: url(../resources/mars-white.jpg) no-repeat;
+  background-attachment: fixed;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.image-holder {
+  height: 150px;
+}
+
+.home-nav {
+  width: 100%;
+  background: $text-dark;
+  margin: 0;
+}
+
+.home-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $text-light;
+  background: $text-dark;
+  height: 60px;
+  font-family: $secondary-font;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+// .home-nav a:hover {
+//   background: $hover-color;
+//   color: $text-light;
+// }
+.home-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.home-nav li {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.home-nav li:hover .submenu > li {
+  display: block;
+  top: 0;
+  flex: 2;
+}
+.submenu li {
+  display: none;
+  position: relative;
+  
+}
+.submenu {
+  position: absolute;
+  display: flex;
+  width: 100%;
+}
+
+.gen a {
+  flex-grow: 1;
+  background: url('../resources/stars.png');
+  &:hover {
+    background: $options-color-light;
+  }
+}
+
+.web a {
+  flex-grow: 1;
+  background: url('../resources/stars.png');
+  &:hover {
+    background: $accent-color-light;
+  }
+}
+
+.soft a {
+  flex-grow: 2;
+  background: url('../resources/stars.png');
+  &:hover {
+    background: $command-color-light;
+  }
+}
+
+.main-wrapper {
+  font-family: $main-font;
+  @include center;
+  // margin-top: 75px;
+}
+
+.em,
+.em a,
+.em a:visited,
+.em a:hover {
+  font-size: 0.75rem;
+  color: $accent-color;
+}
+
+.variables {
+  font-weight: 500;
+  font-family: $secondary-font;
+  font-size: 1.2em;
+  color: $accent-color;
+}
+
+.command {
+  font-weight: 700;
+  font-family: $secondary-font;
+  font-size: 1.2em;
+  color: $command-color;
+}
+
+.options {
+  font-weight: 500;
+  font-family: $secondary-font;
+  font-size: 1.2em;
+  color: $options-color;
+}
+
+.underline {
+  font-weight: bold;
+  color: $hyperlink-hover-color;
+}
+
+.sub-command,
+.sub-options {
+  font-weight: 700;
+  font-family: $secondary-font;
+  font-size: 1.1em;
+  color: $text-dark;
+}
+
+.index {
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.headlines {
+  text-align: center;
+}
+
+.inline,
+.nav {
+  display: flex;
+}
+
+.nav {
+  justify-content: center;
+  a {
+    color: $text-light;
+    text-decoration: none;
+  }
+}
+
+.nav li {
+  padding: 10px 15px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.sassnav li {
+  background: $sass-color;
+}
+
+.htmlnav li {
+  background: $html-light-color;
+}
+
+.bashnav li {
+  background: $bash-light-color;
+}
+
+.sassnav li:hover {
+  background: $scout-color;
+  font-weight: bold;
+}
+.bashnav li:hover {
+  background: $bash-dark-color;
+  font-weight: bold;
+}
+
+.htmlnav li:hover {
+  background: $html-dark-color;
+  font-weight: bold;
+}
+
+.image-hyperlink:hover {
+  border-radius: 15px;
+  box-shadow: 0 0 15px 0 $box-shadow-color;
+}
+
+.float-right {
+  display: block;
+  float: right;
+}
+
+.active {
+  color: $active-color;
+}
+
+footer {
+  background: url('../resources/stars.png');
+  color: $text-light;
+  text-align: center;
+  font-family: $main-font;
+  font-size: .8em;
+  padding: 10px 0;
+}
+
+table {
+  @include center;
+
+}
+
+.copy {
+  text-align: left;
+}
+
+.name {
+  text-align: center;
+  font-size: 2em;
+}
+
+.contact {
+  text-align: right;
+}

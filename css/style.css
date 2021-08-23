@@ -1,0 +1,138 @@
+/* ==================================
+  VARIABLES
+===================================*/
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.main-wrapper {
+  font-family: "Roboto", sans-serif;
+  width: 95%;
+  margin: 20px auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a, a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: purple;
+}
+
+.em,
+.em a,
+.em a:visited,
+.em a:hover {
+  font-size: 0.75rem;
+  color: #3c34e0;
+}
+
+.home-nav,
+.home-nav a,
+.home-nav li {
+  background: black;
+  width: 100%;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+
+.home-nav li {
+  padding: 10px 15px;
+}
+
+.index {
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.command {
+  font-weight: 700;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2em;
+  color: green;
+}
+
+.options {
+  font-weight: 500;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2em;
+  color: maroon;
+}
+
+.sub-command,
+.sub-options {
+  font-weight: 700;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.1em;
+  color: #000;
+}
+
+.headlines {
+  text-align: center;
+}
+
+.inline,
+.nav,
+.home-nav {
+  display: flex;
+}
+
+.nav,
+.home-nav {
+  justify-content: center;
+}
+
+.nav li {
+  padding: 10px 15px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.sassnav li {
+  background: #cf649a;
+}
+
+.htmlnav li {
+  background: #f47933;
+}
+
+.nav li,
+.nav a,
+.nav a:visited {
+  color: #fff;
+}
+
+.sassnav li:hover {
+  background: #e11e26;
+}
+
+.htmlnav li:hover {
+  background: #f15931;
+}
+
+.image-hyperlink:hover {
+  padding: 5px;
+  box-shadow: 0 0 15px 0 #999;
+}
+
+.float-right {
+  display: block;
+  float: right;
+}
+
+.active {
+  color: red;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sass</title>
+  <link rel="stylesheet" href="sass/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <iframe src="menu.html" title="menu" width="100%" height="130px"></iframe> 
+
+  <div class="main-wrapper">
+
+    <div class="headlines"> <!-- START HEADLINES -->
+
+      <div class="image-container">
+        <a href="https://sass-lang.com/" target="_blank"><img class="image-hyperlink" src="resources/sass-logo.svg" alt="Sass logo" height="100px"></a>
+      </div>
+
+      <p>Sass is a CSS pre-processor that allows you to condense your code and to include things like variables, calculations, mixins and partials to extend the capabilities of CSS.</p>
+      <p>Sass is the industry goto for writing CSS.</p>
+
+      <a href="https://scout-app.io/" target="_blank"><img class="image-hyperlink" src="resources/scout-app-logo.svg" alt="Scout App logo" height="50px"></a>
+
+      <p>You can use ScoutApp to process your Sass files without using the command line.</p>
+
+    </div>  <!-- END HEADLINES -->
+
+    <div class="nav sassnav"> <!-- START NAV -->
+      <ul class="inline">
+        <li><a href="#variables">Variables</a></li>
+        <li><a href="#nested-selectors">Nested Selectors</a></li>
+        <li><a href="#ampersand-selector">Ampersand Selector</a></li>
+        <li><a href="#mixins">Mixins</a></li>
+        <li><a href="#partials">Partials</a></li>
+        <li><a href="#sasslinks">Links</a></li>
+      </ul>
+    </div><!-- END NAV -->
+
+    <div class="main-content"> <!-- START MAIN-CONTENT -->
+      <div id="variables">
+        <h2>Variables<span class="em"><a href="#top"> (back to top)</a></span></h2>
+        <p>A core Sass feature that provides a way of storing and keeping track of information. 
+        Useful for colours etc as you can declare once and if you then want to change your colour scheme, you can change in one place rather than everywhere.
+        Also useful for font stacks and other reuseable features.</p>
+
+        <ul>
+          <li><span class="command">$variable-name:</span><span class="options"> value;</span> &#187; declare the variable at the beginning of the Sass file.<br></li>
+          <ul>
+            <li><p>e.g.</p></li>
+            <li><span class="sub-command">$color-primary: #278da4;</span></li>
+            <li><span class="sub-command">$color-text: #343434;</span></li>
+            <li><span class="sub-command">$font-stack: 'Roboto', sans-serif;</span></li>
+            <li><span class="sub-command">$margin: 50px;</span></li>
+            <li><p>Then use them within your CSS:</p>
+              <p class="sub-command">color: $color-text;<br>
+                background: $color-primary;<br>
+                margin-top: $margin;<br>
+                font-family: $font-stack;<br>
+            </li>
+          </ul>
+        </ul>
+      </div>
+
+      <div id="nested-selectors">
+        <h2>Nested Selectors<span class="em"><a href="#top"> (back to top)</a></span></h2>
+        <p>Descendent selectors can become confusing, Sass allows you to nest the descendent inside the parent. It will then output the descendent selector in the CSS.<br>
+        There is no limit to the number of nests but try and keep it to a minimum or you could get "code bloat".</p>
+        <p>BE AS SPECIFIC AS YOU NEED TO BE, BUT DON'T OVERDO IT!</p>
+    
+        <ul class="inline">
+          <li><p class="command">Sass code:</p>
+            <img src="resources/sass-nested.png">
+          </li>
+          <li><p class="options">Output to CSS:</p>
+            <img src="resources/sass-nested-output.png">
+          </li>
+        </ul>
+
+        <p>You can use the combinators in the nesting too, e.g. preface the nested item with > for direct child. See <a href="css.html#selectors" target="_blank">CSS Selectors</a> for more details. (Opens in a new tab.)</p>
+        
+        <ul class="inline">
+          <li><p class="command">Sass code:</p>
+            <img src="resources/sass-nested-descendent.png">
+          </li>
+          <li><p class="options">Output to CSS:</p>
+            <img src="resources/sass-nested-descendent-output.png">
+          </li>
+        </ul>
+
+      </div>
+
+      <div id="ampersand-selector">
+        <h2>Ampersand Selector<span class="em"><a href="#top"> (back to top)</a></span></h2>
+        <p>When nesting the compiler places a space between the first selector and the nested selector. So if you need the two selectors to abut, such as in hyphenated selector names 
+          or pseudos classes, you can use the ampersand (&amp;) which serves as a parent selector reference.</p>    
+    
+        <ul class="inline">
+          <li><p class="command">Sass code:</p>
+            <img src="resources/sass-ampersand.png">
+          </li>
+          <li><p class="options">Output to CSS:</p>
+            <img src="resources/sass-ampersand-output.png">
+          </li>
+        </ul>
+
+        <p>You can also use ampersand (&amp;) after a selector to target the parent within a different selector.</p>
+        
+        <ul class="inline">
+          <li><p class="command">Sass code:</p>
+            <img src="resources/sass-ampersand-after.png">
+          </li>
+          <li><p class="options">Output to CSS:</p>
+            <img src="resources/sass-ampersand-after-output.png">
+          </li>
+        </ul>
+
+      </div>
+
+      <div id="mixins">
+        <h2>Mixins<span class="em"><a href="#top"> (back to top)</a></span></h2>
+        <p>Mixins are one of the most used features of Sass and allows you to write blocks of code that can be reused when items use the same properties.</p>    
+    
+        <ul class="">
+          <li><span class="command">Declare the mixin using </span><span class="options">@mixin <em>mixin-name</em> {}</span>
+            <img src="">
+          </li>
+          <li><span class="command">Use the mixin using </span><span class="options">@include <em>mixin-name</em>;</span>
+            <img src="">
+          </li>
+        </ul>
+
+        <p>You can also use ampersand (&amp;) after a selector to target the parent within a different selector.</p>
+        
+        <ul class="inline">
+          <li><p class="command">Sass code:</p>
+            <img src="resources/sass-ampersand-after.png">
+          </li>
+          <li><p class="options">Output to CSS:</p>
+            <img src="resources/sass-ampersand-after-output.png">
+          </li>
+        </ul>
+
+      </div>
+
+    </div> <!-- END MAIN-CONTENT -->
+
+    <div class="sasslinks">
+      <div id="links">
+        <h2>Links<span class="em"><a href="#top"> (back to top)</a></span></h2>
+
+        <p>Helpful websites and other resources:</p>    
+    
+        <ul class="">
+          <li><a href="https://teamtreehouse.com/library/sass-basics-2" target="_blank">Treehouse Sass Basics Course</a></li>
+          <li><a href="https://teamtreehouse.com/library/css-to-sass" target="_blank">Treehouse CSS to Sass Course</a></li>
+          <li><a href="https://teamtreehouse.com/library/modular-css-with-sass" target="_blank">Treehouse Modular CSS with Sass Course</a></li>
+          <li><a href="https://teamtreehouse.com/library/process-sass-with-scoutapp" target="_blank">Treehouse Process Sass with Scout-App Workshop</a></li>
+          <li><a href="https://sass-lang.com/" target="_blank">Sass Website</a></li>
+          <li><a href="https://scout-app.io/" target="_blank">Scout-App Website</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

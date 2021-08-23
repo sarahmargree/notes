@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML 5</title>
+  <link rel="stylesheet" href="sass/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <iframe src="menu.html" title="menu" width="100%" height="130px"></iframe> 
+  <!-- <div class="home-nav">
+    <ul>
+      <li><a href="#">General</a>
+        <ul class="submenu">
+          <li><a href="bash.html">Bash</a></li>
+          <li><a href="git.html">Git/GitHub</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Web Development</a>
+        <ul class="submenu">
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="flexbox.html">Flexbox</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Software Development</a>
+        <ul class="submenu">
+          <li><a href="java.html">Java</a></li>
+          <li><a href="python.html">Python</a></li>
+          <li><a href="cpp.html">C++</a></li>
+          <li><a href="algorithms.html">Algorithms</a></li>
+          <li><a href="oop.html">Object Oriented Programming</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div> -->
+
+  <div class="main-wrapper">
+
+    <div class="headlines">
+
+      <a href="https://www.w3schools.com/html/" target="_blank"><img class="image-hyperlink" src="resources/html5-logo.png" alt="HTML" height="100px"></a>
+
+      <p>HTML or HyperText Markup Language is the basic code that the structure of websites is written in. It consists of the website content marked up with tags to provide a framework.</p>
+
+      <div class="nav htmlnav"> <!-- START NAV -->
+        <ul class="inline">
+          <li><a href="#basic">Basic Tags</a></li>
+          <li><a href="#common">Common Tags</a></li>
+          <li><a href="#self-close">Self Closing Tags</a></li>
+          <li><a href="#">Name here</a></li>
+          <li><a href="#">Name here</a></li>
+          <li><a href="#htmllinks">Links</a></li>
+        </ul>
+      </div><!-- END NAV -->
+
+      <figure class="float-right">
+        <img src="resources/html.png" alt="Basic HTML">
+        <figcaption>All HTML must have the basic tags above.</figcaption>
+      </figure>
+
+    </div>
+
+    <div class="main-content">
+
+      <h2 id="basic">Basic Tags</h2>
+      <ul>
+        <li><span class="command">&#60;!DOCTYPE html&#62;</span> &#187; tells the browser what document it is receiving</li>
+        <li><span class="command">&#60;html&#62; &#60;/html&#62;</span> &#187; everything except the Doctype declaration must be within these opening and closing tags </li>
+        <li><span class="command">&#60;head&#62; &#60;/head&#62;</span> &#187; denotes the section of the file that contains links to stylesheets, fonts, scripts and meta data</li>
+        <li><span class="command">&#60;title&#62; &#60;/title&#62;</span> &#187; this is the title of the site which will appear in the tab header</li>        
+        <li><span class="command">&#60;body&#62; &#60;/body&#62;</span> &#187; everything that appears in the browser must be in this section</li>
+      </ul>
+
+      <h2 id="common">Common Open/Close Tags</h2>
+      <ul>
+        <li><span class="command">&#60;h1&#62; &#60;/h1&#62;</span> &#187; headings go from 1 to 6, 1 being the largest</li>
+        <li><span class="command">&#60;p&#62; &#60;/p&#62;</span> &#187; formats the contents as a paragraph </li>
+        <li><span class="command">&#60;span&#62; &#60;/span&#62;</span> &#187; formats a single line of text</li>
+        <li><span class="command">&#60;div&#62; &#60;/div&#62;</span> &#187; this is a way of dividing a document into sections</li>        
+        <li><span class="command">&#60;a&#62; &#60;/a&#62;</span> &#187; creates a hyperlink, this can be to an anchor within the same page, a page within the same site or to any page on the internet</li>
+      </ul>
+
+        <h2 id="self-close">Common Self Closing Tags</h2>
+
+        <p>Some tags are what we call self closing. Everything they need is declared within the first tag and they do not enclose other data so do not need a closing tag. 
+            These tags can be written with a trailing / to indicate they are self-closing but this is not necessary. <br>
+            With the exception of the &#60;br&#62; and &#60;hr&#62; tags, these tags require additional information within them to function. Click on the tag name for more details.</p>
+        <ul>
+          <li><span class="command">&#60;br&#62;</span> or <span class="command">&#60;br /&#62;</span> &#187; creates a line break </li>
+          <li><span class="command">&#60;hr&#62;</span> or <span class="command">&#60;hr /&#62;</span> &#187; creates a horizontal rule</li>
+          <li><span class="command">&#60;img&#62;</span> or <span class="command">&#60;img /&#62;</span> &#187; inserts an image into the page, values and attributes are required</li>
+          <li><span class="command">&#60;input&#62;</span> or <span class="command">&#60;input /&#62;</span> &#187; commonly used in forms, allows user input</li>
+          <li><span class="command">&#60;link&#62;</span> or <span class="command">&#60;link /&#62;</span> &#187; this is found in the head element and is used to link to other files/sites such as style sheets and font stacks</li>        
+          <li><span class="command">&#60;meta&#62;</span> or <span class="command">&#60;meta /&#62;</span> &#187; used to hold meta data such as keywords, charsets etc within the head element</li>
+        </ul>
+    
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

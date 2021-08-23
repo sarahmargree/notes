@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Git</title>
+  <link rel="stylesheet" href="sass/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <iframe src="menu.html" title="menu" width="100%" height="130px"></iframe> 
+  <!-- <div class="home-nav">
+    <ul>
+      <li><a href="#">General</a>
+        <ul class="submenu">
+          <li><a href="bash.html">Bash</a></li>
+          <li><a href="git.html">Git/GitHub</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Web Development</a>
+        <ul class="submenu">
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="flexbox.html">Flexbox</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Software Development</a>
+        <ul class="submenu">
+          <li><a href="java.html">Java</a></li>
+          <li><a href="python.html">Python</a></li>
+          <li><a href="cpp.html">C++</a></li>
+          <li><a href="algorithms.html">Algorithms</a></li>
+          <li><a href="oop.html">Object Oriented Programming</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div> -->
+
+  <div class="main-wrapper">
+
+    <div class="headlines">
+
+      <div class="">
+        <a href="https://git-scm.com/" target="_blank"><img class="image-hyperlink" src="resources/git-logo.png" alt="Git logo" height="100px"></a>
+      </div>
+
+      <p>Git is a version control system which allows you to create repositories which can be shared with colleagues.</p>
+
+      <a href="https://github.com/" target="_blank"><img class="image-hyperlink" src="resources/github-logo.png" alt="GitHub logo" height="50px"></a>
+
+      <p>GitHub is a site which hosts Git repositories.</p>
+
+    </div>
+
+    <div class="main-content">
+
+      <div class="">
+        <h2>Git commands</h2>
+        <ul>
+          <li><span class="command">git init</span> &#187; creates a repository in the current directory</li>
+          <li><span class="command">git add &#60;filename&#62;</span> &#187; adds the file to the staging area</li>
+          <li><span class="command">git status</span> &#187; shows the current status</li>
+          <li><span class="command">git commit -m "<em>message which should complete the sentence This commit will...</em>"</span> &#187; commits files in the staging area to the repository</li>
+          <li><span class="command">git config --global user.email "<em>email address</em>"</span> &#187; adds email address to the config</li>
+          <li><span class="command">git config --global user.name "<em>name</em>"</span> &#187; adds user name to the config</li>
+          <li><span class="command">git diff</span> &#187; compares modified files with staged files</li>
+          <li><span class="command">git diff --staged</span> &#187; compares staged files with committed files</li>
+          <li><span class="command">git log -p</span> &#187; shows the changes made in each commit</li>
+          <li><span class="command">git rm &#60;filename&#62;</span> &#187; adds remove file request to staging area, commit as usual to remove from repository</li>
+          <li><span class="command">git mv &#60;original-filename new-filename&#62;</span> &#187; moves/renames files</li>
+          <li><span class="command">git reset HEAD &#60;filename&#62;</span> &#187; removes file from staging area</li>
+          <li><span class="command">git checkout -- &#60;filename&#62;</span> &#187; discard changes including retrieving a deleted file</li>
+          <li><span class="command"></span> &#187; </li>
+          <li><span class="command"></span> &#187; </li>
+          <li><span class="command"></span> &#187; </li>
+          <li><span class="command"></span> &#187; </li>
+          <li><span class="command"></span> &#187; </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
